@@ -1,0 +1,58 @@
+{
+  "name": "healthlink",
+  "version": "1.0.0",
+  "description": "HealthLink - Basic e-Clinic & Triage System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client/healthlink-client && npm start",
+    "install-server": "cd server && npm install",
+    "install-client": "cd client/healthlink-client && npm install",
+    "install-all": "npm run install-server && npm run install-client",
+    "build": "cd client/healthlink-client && npm run build"
+  },
+  "keywords": [
+    "healthcare",
+    "triage",
+    "mern",
+    "clinic"
+  ],
+  "author": "HealthLink Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@tiptap/extension-bold": "^3.11.0",
+    "@tiptap/extension-bullet-list": "^3.11.0",
+    "@tiptap/extension-document": "^3.11.0",
+    "@tiptap/extension-italic": "^3.11.0",
+    "@tiptap/extension-link": "^3.11.0",
+    "@tiptap/extension-list-item": "^3.11.0",
+    "@tiptap/extension-ordered-list": "^3.11.0",
+    "@tiptap/extension-paragraph": "^3.11.0",
+    "@tiptap/extension-strike": "^3.11.0",
+    "@tiptap/extension-text": "^3.11.0",
+    "@tiptap/extension-underline": "^3.11.0",
+    "@tiptap/pm": "^3.11.0",
+    "@tiptap/react": "^3.11.0",
+    "@tiptap/starter-kit": "^3.11.0",
+    "date-fns": "^4.1.0",
+    "framer-motion": "^12.23.24",
+    "prop-types": "^15.8.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-resizable": "^3.0.5",
+    "react-router-dom": "^7.9.6",
+    "simple-peer": "^9.11.1",
+    "socket.io-client": "^4.8.1"
+  }
+}
